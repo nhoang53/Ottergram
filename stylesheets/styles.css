@@ -1,0 +1,117 @@
+/* download Resouces: www.bignerdranch.com/downloads/front-end-der-resources.zip */
+/*  RULES: style should be in alphabet order */
+
+@font-face {
+  font-family: 'lakeshore';
+  font-style: normal;
+  font-weight: normal;
+  src: url('fonts/LAKESHOR-webfont.eot');
+  src: url('fonts/LAKESHOR-webfont.eot?#iefix') format('embedded-opentype'),
+      url('fonts/LAKESHOR-webfont.woff') format('woff'),
+      url('fonts/LAKESHOR-webfont.ttf') format('ttf'),
+      url('fonts/LAKESHOR-webfont.svg#lakeshore') format('svg');
+}
+
+@font-face {
+  font-family: 'airstreamregular';
+  font-style: normal;
+  font-weight: normal;
+  src: url('fonts/AIRSTREAM-webfont.eot');
+  src: url('fonts/AIRSTREAM-webfont.eot?#iefix') format('embedded-opentype'),
+      url('fonts/AIRSTREAM-webfont.woff') format('woff'),
+      url('fonts/AIRSTREAM-webfont.ttf') format('ttf'),
+      url('fonts/AIRSTREAM-webfont.svg#lakeshore') format('svg');
+}
+
+html, body{
+  height: 100%;
+}
+
+body {
+  /* make content growing & sinking */
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(149, 194, 215);
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.logo-text {
+  background: white;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: lakeshore;
+  font-size: 37px;
+}
+
+.main-content{
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.thumbnail-item {
+  /* border: 1px solid #FFFFFF; */
+  border: 1px solid rgb(100%, 100%, 100%);
+  border: 1px solid rgba(100%, 100%, 100%, 0.8); /*rgba is for transparent*/
+  display: inline-block;
+  min-width: 120px;
+  max-width: 120px;
+
+}
+
+.thumbnail-list {
+  display: flex;
+  flex: 0 1 auto;
+  /* list-style: none; */
+  padding: 0;
+  order: 1; /* display order*/
+  justify-content: space-between;
+  white-space: nowrap;   /* no wrap the list items */
+  overflow-x: auto;
+}
+
+.thumbnail-image {
+  /* display: block; */
+  width: 100%;
+}
+
+.thumbnail-title {
+  background: rgb(96, 125, 139);
+  color: rgb(202, 238, 255);
+  display: block;
+  margin: 0;
+  padding: 4px 10px; /*  5px top & bottom, 10px on the sizes */
+  font-size: 18px;
+}
+
+.detail-image-frame{
+  position: relative;
+  text-align: center;
+}
+
+.detail-image-container{
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.detail-image{
+  flex: 1 1 auto;  /* take much space as posible*/
+  width: 90%;
+}
+
+.detail-image-title{
+  position: absolute;
+  bottom: -16px;
+  left: 4px;
+
+  font-family: airstreamregular;
+  color: white;
+  text-shadow: rgba(0, 0, 0, 0.9) 4px 20px 6px; /* sides - topbottom - blury*/
+  font-size: 50px;
+}
